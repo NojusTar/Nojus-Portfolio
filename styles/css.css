@@ -1,0 +1,15 @@
+.selected-bold {
+  font-weight: bold;
+}
+
+.unselected-bold {
+  font-weight: 500;
+}
+
+#card-tilt {
+  transform-style: preserve-3d;
+  transform: perspective(1000px) rotateX(25deg) rotateY(25deg);
+}
+#card-img {
+  transform: translateZ(20px);
+}
