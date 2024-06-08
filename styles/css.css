@@ -8,10 +8,22 @@
 
 #card-tilt {
   transform-style: preserve-3d;
-  transform: perspective(1000px) rotateX(25deg) rotateY(25deg);
+  transform: perspective(5000px);
 }
+
 #card-img {
   transform: translateZ(20px);
+}
+
+#see-more {
+  transform: translateZ(40px);
+}
+
+.see-more {
+  opacity: 0;
+}
+.test {
+  background-color: red;
 }
 
 /*

@@ -35,7 +35,7 @@
     <main id="main" class="w-full grid grid-cols-[100%_100%] overflow-hidden">
       <div id="left" class="grid grid-cols-2">
         <div id="left-left" class="flex flex-col items-center ps-40">
-          <div class="text-8xl text-center font-bold">NOJUS TAROZAAAA</div>
+          <div class="text-8xl text-center font-bold">NOJUS TAROZA</div>
           <div class="text-lg text-center mt-14">
             Recently finished school and got bachelors degree in computer
             science. <br />
@@ -152,6 +152,7 @@
         <div class="grid grid-cols-2">
           <div class="flex items-center h-[35rem] justify-end">
             <div
+              data-tilt
               id="card-tilt"
               class="border-8 border-redish flex justify-center items-center w-[30rem] h-[30rem]"
             >
@@ -160,7 +161,8 @@
                 class="bg-slate-700 flex justify-center items-end w-[28rem] h-[28rem]"
               >
                 <a
-                  class="transition-all mb-5 font-bold mt-5 border-2 hover:border-redish-selected hover:text-redish-selected border-redish text-redish p-1 text-xl"
+                  id="see-more"
+                  class="see-more transition-all mb-5 font-bold mt-5 border-2 hover:border-redish-selected hover:text-redish-selected border-redish text-redish p-1 text-xl"
                   href="#"
                 >
                   SEE MORE
@@ -195,6 +197,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
 
     <script src="/scripts/script.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
   </body>
 
   <script>
@@ -218,5 +221,17 @@
       $(this).addClass("selected-bold");
       $("#projects").removeClass("selected-bold");
     });
+
+    document
+      .getElementById("card-tilt")
+      .addEventListener("mouseover", function () {
+        document.getElementById("see-more").classList.remove("see-more");
+      });
+
+    document
+      .getElementById("card-tilt")
+      .addEventListener("mouseleave", function () {
+        document.getElementById("see-more").classList.add("see-more");
+      });
   </script>
 </html>
