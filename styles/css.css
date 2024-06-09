@@ -40,3 +40,8 @@ body {
   background-image: url("/images/unity-fps.png");
   background-position: 30% 35%;
 }
+
+.ymir-site {
+  background-image: url("/images/YMIR.jpg");
+  background-position: 20% 45%;
+}
