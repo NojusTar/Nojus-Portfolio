@@ -29,14 +29,14 @@
       <span></span>
     </div>
 
-    <div class="fixed w-full bg-background z-50 text-center">
-      <header class="w-full flex items-center justify-center">
+    <div class="fixed w-full 2md:hidden bg-background z-50">
+      <header class="w-full">
         <h1 id="portfolio" class="text-8xl font-bold bg text-redish">
           PORTFOLIO
         </h1>
       </header>
 
-      <nav class="flex justify-center items-center w-full py-5 gap-40">
+      <nav class="flex gap-5">
         <a id="about" class="selected-bold text-4xl transition-all" href="#"
           >ABOUT</a
         >
@@ -46,25 +46,27 @@
       </nav>
     </div>
 
-    <div class="h-80"></div>
+    <div class="h-80 2md:h-10"></div>
 
     <main
       id="main"
-      class="w-full grid grid-cols-[100%_100%] 2md:grid-cols-1 overflow-hidden"
+      class="w-full grid grid-cols-[100%_100%] 2md:grid-cols-[100%] overflow-hidden"
     >
       <div id="left" class="grid grid-cols-2 2md:grid-cols-1">
         <div
           id="left-left"
-          class="flex flex-col items-center ps-40 2md:ps-0 2md:pb-20"
+          class="flex flex-col items-center 2md:ps-0 2md:pb-20"
         >
-          <div class="text-8xl text-center font-bold">NOJUS TAROZA</div>
-          <div class="text-lg text-center mt-14">
+          <div class="text-8xl text-center sm:text-6xl font-bold">
+            NOJUS TAROZA
+          </div>
+          <div class="text-lg text-center mt-14 2md:w-10/12">
             Recently finished school and got bachelors degree in computer
             science. <br />
             I'm always trying to improve my skills and learn from making
             personal projects
           </div>
-          <div class="text-center text-lg mt-1">
+          <div class="text-center text-lg 2md:w-10/12 mt-1">
             I'm looking for a job in my studies field.
           </div>
           <a
@@ -107,10 +109,12 @@
         </div>
 
         <div id="left-right" class="2md:pb-20">
-          <div class="text-8xl text-center font-bold text-redish">SKILLS</div>
+          <div class="text-8xl sm:text-6xl text-center font-bold text-redish">
+            SKILLS
+          </div>
 
           <div
-            class="flex justify-center flex-wrap px-56 2xl:px-52 xl:px-24 gap-2 mt-14"
+            class="flex justify-center flex-wrap px-56 2xl:px-52 xl:px-24 sm:px-10 gap-2 mt-14"
           >
             <div
               class="border transition-all cursor-pointer hover:border-redish-selected hover:text-redish-selected text-redish p-1 font-semibold border-redish"
@@ -196,13 +200,11 @@
         </div>
       </div>
 
-      <div id="right" class="py-2">
+      <div id="right" class="py-2 flex flex-col items-center">
         <!-- item 1 -->
-        <div
-          class="flex justify-start 2md:gap-2 2md:items-center 2md:flex-col-reverse pb-20"
-        >
+        <div class="flex xl:gap-2 xl:items-center xl:flex-col-reverse pb-20">
           <div>
-            <div class="flex flex-col w-[40rem] lg:w-[35rem]">
+            <div class="flex flex-col w-[40rem] lg:w-[35rem] sm:w-[17rem]">
               <div class="text-3xl text-center font-bold">
                 RESTAURANT RESERVARTION <br />
                 MOBILE APP
@@ -211,7 +213,7 @@
                 Cross platform mobile applications made with ReactNative
                 featuring:
               </div>
-              <div class="flex justify-center gap-10">
+              <div class="flex sm:flex-col justify-center sm:gap-0 gap-10">
                 <div>
                   <li>Profile managment system</li>
                   <li>Restaurant reservation system</li>
@@ -221,7 +223,7 @@
                   <li>Reservation managment system</li>
                 </div>
               </div>
-              <div class="flex justify-center gap-2 pt-5">
+              <div class="flex flex-wrap justify-center gap-2 pt-5">
                 <div
                   class="border transition-all cursor-pointer hover:border-redish-selected hover:text-redish-selected text-redish p-1 font-semibold border-redish"
                 >
@@ -253,12 +255,12 @@
 
           <div
             id="card-tilt"
-            class="border-8 border-redish flex justify-center items-center overflow-visible w-96 h-96"
+            class="border-8 border-redish flex justify-center items-center overflow-visible w-96 h-96 sm:w-[17rem] sm:h-[17rem]"
             data-tilt
           >
             <div
               id="card-img"
-              class="w-[22rem] h-[22rem] flex justify-center items-end restaurant-app"
+              class="w-[22rem] h-[22rem] sm:w-[15rem] sm:h-[15rem] flex justify-center items-end restaurant-app"
             >
               <a
                 id="see-more"
@@ -273,17 +275,15 @@
 
         <!-- item 1 end -->
         <!-- item 2-->
-        <div
-          class="flex justify-end pb-20 2md:gap-2 2md:items-center 2md:flex-col"
-        >
+        <div class="flex pb-20 xl:gap-2 xl:items-center xl:flex-col">
           <div
             id="card-tilt"
-            class="border-8 border-redish flex justify-center items-center overflow-visible w-96 h-96"
+            class="border-8 border-redish flex justify-center items-center overflow-visible w-96 h-96 sm:w-[17rem] sm:h-[17rem]"
             data-tilt
           >
             <div
               id="card-img"
-              class="w-[22rem] h-[22rem] flex justify-center items-end bg-slate-500 unity-fps"
+              class="w-[22rem] h-[22rem] sm:w-[15rem] sm:h-[15rem] flex justify-center items-end bg-slate-500 unity-fps"
             >
               <a
                 id="see-more"
@@ -296,14 +296,14 @@
           </div>
 
           <div>
-            <div class="flex flex-col w-[40rem] lg:w-[35rem]">
+            <div class="flex flex-col w-[40rem] lg:w-[35rem] sm:w-[17rem]">
               <div class="text-3xl text-center font-bold">
                 UNITY FPS PROJECT
               </div>
               <div class="text-text text-center my-5">
                 Unity first person shooter project project featuring:
               </div>
-              <div class="flex justify-center gap-10">
+              <div class="flex sm:flex-col justify-center sm:gap-0 gap-10">
                 <div>
                   <li>Weapon inventory system</li>
                   <li>Simple enemy AI</li>
@@ -315,7 +315,7 @@
                   <li>Detonating enemies</li>
                 </div>
               </div>
-              <div class="flex justify-center gap-2 pt-5">
+              <div class="flex flex-wrap justify-center gap-2 pt-5">
                 <div
                   class="border transition-all cursor-pointer hover:border-redish-selected hover:text-redish-selected text-redish p-1 font-semibold border-redish"
                 >
@@ -337,18 +337,16 @@
         </div>
         <!-- item 2 end -->
         <!-- item 3 -->
-        <div
-          class="flex justify-start 2md:gap-2 2md:items-center 2md:flex-col-reverse pb-20"
-        >
+        <div class="flex xl:gap-2 xl:items-center xl:flex-col-reverse pb-20">
           <div>
-            <div class="flex flex-col w-[40rem] lg:w-[35rem]">
+            <div class="flex flex-col w-[40rem] lg:w-[35rem] sm:w-[17rem]">
               <div class="text-3xl text-center font-bold">
                 MOVIE RATING SITE
               </div>
               <div class="text-text text-center my-5">
                 A simple movie rating site featuring:
               </div>
-              <div class="flex justify-center gap-10">
+              <div class="flex sm:flex-col justify-center sm:gap-0 gap-10">
                 <div>
                   <li>Multiple pages</li>
                   <li>Miniman design</li>
@@ -358,7 +356,7 @@
                   <li>Profile system</li>
                 </div>
               </div>
-              <div class="flex justify-center gap-2 pt-5">
+              <div class="flex flex-wrap justify-center gap-2 pt-5">
                 <div
                   class="border transition-all cursor-pointer hover:border-redish-selected hover:text-redish-selected text-redish p-1 font-semibold border-redish"
                 >
@@ -385,12 +383,12 @@
 
           <div
             id="card-tilt"
-            class="border-8 border-redish flex justify-center items-center overflow-visible w-96 h-96"
+            class="border-8 border-redish flex justify-center items-center overflow-visible w-96 h-96 sm:w-[17rem] sm:h-[17rem]"
             data-tilt
           >
             <div
               id="card-img"
-              class="w-[22rem] h-[22rem] flex justify-center items-end bg-slate-500 ymir-site"
+              class="w-[22rem] h-[22rem] sm:w-[15rem] sm:h-[15rem] flex justify-center items-end bg-slate-500 ymir-site"
             >
               <a
                 id="see-more"
